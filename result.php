@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_POST['firstName'],
         $_POST['lastName'],
         $_POST['phoneNumber'],
-        $_POST['address']
+        $_POST['addresss']
     );
 
     $result = $person->displayData();
