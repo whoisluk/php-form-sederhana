@@ -15,6 +15,7 @@ Project ini adalah form sederhana berbasis PHP yang digunakan untuk input data p
 - `index.php` → halaman utama dan form
 - `Person.php` → class Person
 - `style.css` → styling halaman
+- `result.php` → 
 
 ## Cara Menjalankan
 1. Simpan project di folder `C:\laragon\www\`
