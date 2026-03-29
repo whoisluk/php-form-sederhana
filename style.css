@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* container */
+.container {
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* title */
+h1 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input */
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* focus */
+input:focus,
+textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+}
+
+/* button */
+button {
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #007bff;
+}
+
+/* result */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f9ff;
+  border-left: 5px solid #4facfe;
+  border-radius: 8px;
+  text-align: left;
+}

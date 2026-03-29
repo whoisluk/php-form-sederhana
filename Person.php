@@ -1,9 +1,10 @@
 <?php
+
 class Person {
-    public $firstName;
-    public $lastName;
-    public $phoneNumber;
-    public $address;
+    private $firstName;
+    private $lastName;
+    private $phoneNumber;
+    private $address;
 
     public function __construct($firstName, $lastName, $phoneNumber, $address) {
         $this->firstName = htmlspecialchars($firstName);
@@ -16,22 +17,11 @@ class Person {
         return $this->firstName . " " . $this->lastName;
     }
 
-    public function getPhoneNumber() {
-        return $this->phoneNumber;
-    }
-
-    public function getAddress() {
-        return $this->address;
-    }
-
     public function displayData() {
         return "
-            <div class='result-box'>
-                <p>Hi, my name is <strong>" . $this->getFullName() . "</strong></p>
-                <p><strong>Phone Number:</strong> " . $this->getPhoneNumber() . "</p>
-                <p><strong>Address:</strong> " . $this->getAddress() . "</p>
-            </div>
+            <strong>Nama:</strong> " . $this->getFullName() . "<br>
+            <strong>No HP:</strong> " . $this->phoneNumber . "<br>
+            <strong>Alamat:</strong> " . $this->address . "
         ";
     }
 }
-?>
