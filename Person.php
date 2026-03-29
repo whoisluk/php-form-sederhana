@@ -13,15 +13,11 @@ class Person {
         $this->address = htmlspecialchars($address);
     }
 
-    public function getFullName() {
-        return $this->firstName . " " . $this->lastName;
-    }
-
     public function displayData() {
         return "
-            <strong>Nama:</strong> " . $this->getFullName() . "<br>
-            <strong>No HP:</strong> " . $this->phoneNumber . "<br>
-            <strong>Alamat:</strong> " . $this->address . "
+            <strong>Nama:</strong> {$this->firstName} {$this->lastName}<br>
+            <strong>No HP:</strong> {$this->phoneNumber}<br>
+            <strong>Alamat:</strong> {$this->address}
         ";
     }
 }
